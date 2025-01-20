@@ -61,7 +61,7 @@ const Projects = () => {
                                     Lead the development of a student finance management application as part of my group project at University. Used Angular and Springboot frameworks to develope a sull stack web application with multiple components. Lead team meetings and project discussions to optimise the teams performance and set out performance targets for team members
                                 </p>
                                 <div className="project-buttons">
-                                    <Button>Link comming soon</Button>
+                                    <Button onClick={() => window.open('https://git.cs.bham.ac.uk/team-projects-2023-24/team04', '_blank')}>GitLab</Button>
                                 </div>
                             </div>
                             <div className="project-image">
