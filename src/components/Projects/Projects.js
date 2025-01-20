@@ -3,7 +3,7 @@ import Section from '../section';
 import Project_item from './Project_item';
 import './projects.css';
 import Button from '../Button/Button';
-import Img from "../../assets/airdeska.png"
+import Img from "../../assets/plytol.png"
 
 
 const Projects = () => {
@@ -27,8 +27,7 @@ const Projects = () => {
                                     Developed a react web application for small team task management using the MERN tech stack. Integrated with MongoDb for authenitcation and storage
                                 </p>
                                 <div className="project-buttons">
-                                    <Button>GitHub</Button>
-                                    <Button>Demo</Button>
+                                    <Button>Link comming soon</Button>
                                 </div>
                             </div>
                             <div className="project-image">
@@ -45,8 +44,7 @@ const Projects = () => {
                                     Developed a cross-platform mobile application that enhances diet management and fitness tracking. Used Flutter framework for efficient development of the front-end, as well as node.js and MongoDb for the backend
                                 </p>
                                 <div className="project-buttons">
-                                    <Button>GitHub</Button>
-                                    <Button>Demo</Button>
+                                    <Button>Link comming soon</Button>
                                 </div>
                             </div>
                             <div className="project-image">
@@ -63,8 +61,7 @@ const Projects = () => {
                                     Lead the development of a student finance management application as part of my group project at University. Used Angular and Springboot frameworks to develope a sull stack web application with multiple components. Lead team meetings and project discussions to optimise the teams performance and set out performance targets for team members
                                 </p>
                                 <div className="project-buttons">
-                                    <Button>GitHub</Button>
-                                    <Button>Demo</Button>
+                                    <Button>Link comming soon</Button>
                                 </div>
                             </div>
                             <div className="project-image">
