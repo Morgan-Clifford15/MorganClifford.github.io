@@ -1,0 +1,127 @@
+/* General Layout */
+.projects-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.projects-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* Individual Project Item Container */
+.project-item-container {
+    display: flex;
+    max-width: 70vw;
+    padding: 2rem;
+    border-radius: 15px;
+    /* Placeholder background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Alternating Layout: Reverse direction for every other item */
+.projects-items .project-item-container:nth-child(even) .project-content {
+    flex-direction: row-reverse;
+}
+
+/* Content Layout */
+.project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.project-text {
+    max-width: 50%;
+}
+
+.project-text h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem;
+}
+
+.project-tech {
+    font-size: 1rem;
+    color: #888888;
+    /* Subtle gray for tech stack */
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: #cccccc;
+    /* Placeholder text color */
+}
+
+/* Buttons */
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-buttons button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-buttons button:hover {
+    background-color: #444444;
+    /* Placeholder hover color */
+}
+
+/* Image Section */
+.project-image {
+    position: relative;
+    /* Make the container relative to position the pseudo-element */
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    /* Ensure the image is above the pseudo-element */
+    z-index: 1;
+    /* Stack the image above the blur */
+}
+
+.project-image::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150%;
+    height: 120%;
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.6), rgba(41, 128, 185, 0.6));
+    filter: blur(50px);
+    z-index: 0;
+    /* Stack the blur below the image */
+    border-radius: 50%;
+    /* Optional: makes the blur softer */
+}

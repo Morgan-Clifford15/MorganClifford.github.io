@@ -1,0 +1,89 @@
+/* General Layout */
+.experience-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.experience-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* Adds spacing between the items */
+    flex-wrap: wrap;
+    /* Ensures responsive behavior */
+    margin-top: 1.5rem;
+}
+
+/* Individual Experience Item Container */
+.experience-item-container {
+    width: 300px;
+    /* Adjust for card size */
+    border-radius: 15px;
+    /* Rounded corners for the card */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Card shadow effect */
+    background-color: #202020;
+    /* Placeholder background color */
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-item-container:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow */
+}
+
+/* Inner Layout Structure */
+.layout-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+/* Image Styling */
+.layout-structure img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    /* Slight rounding for the image */
+}
+
+/* Text Styling */
+.experience-information h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.experience-information h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #888888;
+    /* Subtle gray color */
+    margin: 0.5rem 0;
+}
+
+/* Button Styling */
+.experience-information button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    /* Placeholder button color */
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.experience-information button:hover {
+    background-color: #2563eb;
+    /* Darker color on hover */
+}

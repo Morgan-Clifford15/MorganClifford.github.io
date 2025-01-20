@@ -1,0 +1,21 @@
+.button {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    background-color: mediumturquoise;
+    border-radius: 12px;
+    border: None;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #333135;
+    color: mediumturquoise;
+    text-decoration: underline;
+    border: 2px solid mediumturquoise;
+}

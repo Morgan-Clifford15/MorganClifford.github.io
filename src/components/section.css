@@ -1,0 +1,17 @@
+/* Container styles */
+.section-container {
+    position: relative;
+    background-color: #333135;
+    color: white;
+    padding-top: 100px;
+}
+
+.section-with-crosses {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.section-with-crosses.lg {
+    padding-top: 32px;
+    padding-bottom: 40px;
+}

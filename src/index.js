@@ -2,16 +2,44 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Header from './components/Header/Header';
+import Contact from './components/Contact';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import AboutPlytol from './components/Plytol/about_plytol';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const Layout = () => {
+  return (
+    <div className='layout-container'>
+      <Header />
+      <Outlet />
+    </div>
+  );
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <App />
+      },
+      {
+        path: "/about_plytol",
+        element: <AboutPlytol />
+      },
+      {
+        path: "/contact",
+        element: <Contact />
+      }
+    ]
+  }
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

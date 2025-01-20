@@ -1,0 +1,163 @@
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    gap: 60px;
+    /* Add spacing between text and image */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    max-width: 50%;
+    text-align: left;
+}
+
+.text-and-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-container {
+    max-width: 200px;
+    width: 100%;
+}
+
+.button-container button {
+    width: 100%;
+}
+
+.text-container h3,
+.text-container h1,
+.text-container p {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.text-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.job-span {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.job-title {
+    color: mediumturquoise;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid mediumturquoise;
+    width: 17ch;
+    /* Set initial width to final width */
+    animation:
+        typing 2.5s steps(40, end),
+        blink 1s step-end infinite;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.image-container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 8px solid mediumturquoise;
+    box-shadow: 0 0 30px 8px mediumturquoise;
+    position: relative;
+    aspect-ratio: 1 / 1;
+}
+
+.image-border {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-border img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Add responsiveness for smaller screens */
+@media screen and (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        /* Stack text below the image */
+        align-items: center;
+        /* Center items */
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 40px;
+        /* Add space between the image and text */
+    }
+
+    .text-container {
+        max-width: 100%;
+        /* Expand text to full width */
+        text-align: left;
+        /* Center-align text */
+    }
+
+    .text-container h1 {
+        font-size: 2.5rem;
+        /* Slightly reduce heading size for small screens */
+    }
+
+    .text-container p {
+        font-size: 1.2rem;
+        /* Adjust paragraph size for better readability */
+    }
+
+    .image-container {
+        width: 300px;
+        /* Reduce image size on small screens */
+        height: 300px;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 17ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.button-content svg {
+    font-size: 1rem;
+}

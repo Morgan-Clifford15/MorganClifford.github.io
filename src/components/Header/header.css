@@ -1,0 +1,197 @@
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling across the page */
+}
+
+
+/* Header */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    /* Ensures the header is always on top */
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    /* You can adjust this to match the header's total height */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333135;
+    color: white;
+    /* Set the height of your header */
+}
+
+/* Adjust the layout-container to prevent content from being hidden under the header */
+.layout-container {
+    padding-top: 60px;
+    /* This should match the height of your header */
+}
+
+.name-span {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.name-firstName {
+    color: mediumturquoise;
+}
+
+/* Navigation */
+.navigation-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    /* Center the navigation links */
+    flex-grow: 1;
+    /* Allow navigation section to grow and take available space */
+}
+
+/* Navigation Item Styles */
+.navigation-item {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.navigation-item:hover {
+    color: mediumturquoise;
+    cursor: pointer;
+}
+
+/* Button for opening navigation slider on small screens */
+.nav-toggle-button {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navigation links container for large screens */
+.navigation-links {
+    display: flex;
+    justify-content: center;
+    /* Center the navigation links on large screens */
+    gap: 20px;
+}
+
+/* Social Links for Large Screens */
+.social-links-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    /* Align social icons to the right */
+}
+
+/* Social Media Icon Styles */
+.social-icon {
+    font-size: 30px;
+    color: white;
+    transition: color 0.3s;
+}
+
+/* Hover Effect for Icons */
+.social-icon:hover {
+    color: mediumturquoise;
+    cursor: pointer;
+}
+
+/* Navigation slider (hidden by default) */
+.nav-slider {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Initially hidden off-screen to the right */
+    width: 100%;
+    /* Full width of the screen */
+    height: 100%;
+    /* Full height of the screen */
+    background-color: #333135;
+    z-index: 1000;
+    transition: right 0.3s ease;
+    /* Smooth transition from right */
+}
+
+/* Show the nav-slider when active */
+.nav-slider.active {
+    right: 0;
+    /* Slide in the nav from the right */
+    display: block;
+}
+
+/* Links inside the slider */
+.nav-slider a {
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+    /* Optional: add some separation between items */
+}
+
+/* Back button to close the slider */
+.nav-back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* Align to the right */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+
+    /* Hide regular navigation on small screens */
+    .navigation-links {
+        display: none;
+    }
+
+    /* Hide social links in the header on small screens */
+    .social-links-row {
+        display: none;
+    }
+
+    /* Show the nav-toggle-button on small screens */
+    .nav-toggle-button {
+        display: block;
+        position: absolute;
+        right: 20px;
+        /* Position the button on the right */
+        top: 10px;
+        /* Add a little margin to the top */
+    }
+
+    /* Center the navigation items in the nav-slider on small screens */
+    .nav-slider a {
+        text-align: center;
+    }
+
+    /* Social icons inside the slider should be centered as well */
+    .social-links-column {
+        flex-direction: row;
+        gap: 15px;
+        /* Adjust the gap for a row layout on small screens */
+    }
+
+    .social-icon {
+        font-size: 25px;
+        /* Adjust size of icons on smaller screens */
+    }
+}
