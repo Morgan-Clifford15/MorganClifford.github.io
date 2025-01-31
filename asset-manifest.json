@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio-site/static/css/main.468375b4.css",
-    "main.js": "/portfolio-site/static/js/main.7bb2296e.js",
+    "main.js": "/portfolio-site/static/js/main.0a9eecdc.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/airdeska_app.png": "/portfolio-site/static/media/airdeska_app.9caa5893a2407484cd8c.png",
     "static/media/IMG_3345.jpg": "/portfolio-site/static/media/IMG_3345.2a0c72995af61921218d.jpg",
     "static/media/pubgolf.png": "/portfolio-site/static/media/pubgolf.4de6eb82369290aecda2.png",
+    "static/media/Morgan_Clifford_CV.pdf": "/portfolio-site/static/media/Morgan_Clifford_CV.4b6517fbc6cf62b410d3.pdf",
     "static/media/plytol.png": "/portfolio-site/static/media/plytol.a18edc30ee1145f2a706.png",
     "static/media/logo.svg": "/portfolio-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio-site/index.html",
     "main.468375b4.css.map": "/portfolio-site/static/css/main.468375b4.css.map",
-    "main.7bb2296e.js.map": "/portfolio-site/static/js/main.7bb2296e.js.map",
+    "main.0a9eecdc.js.map": "/portfolio-site/static/js/main.0a9eecdc.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.468375b4.css",
-    "static/js/main.7bb2296e.js"
+    "static/js/main.0a9eecdc.js"
   ]
 }
